@@ -22,7 +22,7 @@ sed -i 's/upstream_nodes = \[.*\]/upstream_nodes = \["http:\/\/52.15.236.78:8080
 sed -i "$(($(cat ~/.0L/0L.toml | grep -n "tx_configs.miner_txs_cost" | awk -F ":" '{print $1}')+1))c max_gas_unit_for_tx = 20000" ~/.0L/0L.toml
 
 
-while [[ $(curl -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"get_account","params":["'${Address}'"],"id":1}' http://0lexplorer.io/api/proxy/node | jq -r '.result') == "null" ]]
+while [[ $(curl -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"get_account","params":["'${Address}'"],"id":1}' http://63.229.234.77:8080 | jq -r '.result') == "null" ]]
 do
     ./onboard.sh "${ONBOARDMNEMONIC}" "${AutheneticationKey}"
     PID=$!; wait ${PID}
