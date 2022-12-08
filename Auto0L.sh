@@ -29,6 +29,3 @@ do
 done
 
 wget https://github.com/OLSF/libra/releases/download/v5.2.0/tower -O ~/bin/tower && chmod +x ~/bin/tower
-
-sed -i 's/MNEMONIC="Input your 0L mnemonic here"/MNEMONIC="'${MNEMONIC}'"/g' ~/AutoTower_Local_mode.sh
-./AutoTower_Local_mode.sh
