@@ -29,3 +29,4 @@ do
 done
 
 wget https://github.com/OLSF/libra/releases/download/v5.2.0/tower -O ~/bin/tower && chmod +x ~/bin/tower
+./AutoLocalTower.sh
