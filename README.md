@@ -27,7 +27,7 @@ txs create-account --authkey ${your authkey here} --coins 1
 
 ## submitgenesis.sh
 used to submit genesis proof(proof_0.json)
-The official tower tool doesn't seem to be able to upload it, so a Modify version is provided here《
+The official tower tool doesn't seem to be able to upload it, so a Modify version is provided here
 and will replace it to official version after submitting genesis proof successfully
 
 ## AutoLocalTower.sh
