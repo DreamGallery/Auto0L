@@ -1,6 +1,11 @@
 # Auto0L
 Auto install 0L and set 0L.toml to run Tower(only)
 
+## Requirement
+```
+sudo apt-get install jq tcl expect
+```
+
 ## Auto0L.sh
 ```
 ONBOARDMNEMONIC="Input your 0L mnemonic here"
