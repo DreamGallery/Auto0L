@@ -35,3 +35,8 @@ do
 done
 
 wget -q https://github.com/OLSF/libra/releases/download/v5.2.0/tower -O ~/bin/tower && chmod +x ~/bin/tower
+
+echo "-----------------------------------------------------------------------------------"
+echo "New account initialization completed, please write down the mnemonic in keygen.log"
+echo "You can add the mnemonic to AutoLocalTower.sh and start mining you first proof."
+echo "-----------------------------------------------------------------------------------"
