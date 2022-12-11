@@ -3,7 +3,7 @@ Auto install 0L and set 0L.toml to run Tower(only)
 
 ## Requirement
 ```
-sudo apt-get install jq tcl expect
+sudo apt-get install jq tcl expect moreutils -y
 ```
 
 ## Auto0L.sh
