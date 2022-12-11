@@ -28,7 +28,7 @@ do
     PID=$!; wait ${PID}
 done
 
-while [[ $(curl -s https://0l.interblockcha.in:444/epochs/proofs/${Address}) == \[\] ]]
+while [[ $(curl -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"get_tower_state_view","params":["'${Address}'"],"id":1}' http://63.229.234.77:8080 | jq -r '.result') == "null" ]]
 do
     ./submitgenesis.sh "${MNEMONIC}"
     PID=$!; wait ${PID}
