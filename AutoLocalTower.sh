@@ -5,6 +5,7 @@ trap "pkill -P $$" SIGINT
 [ -f tower.log ] && rm tower.log
 DIR=~/.0L/vdf_proofs/
 MNEMONIC="put your 0L menmonic here"
+#MNEMONIC=$(cat keygen.log | sed -n "11p" | sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g")
 
 {
     while true
