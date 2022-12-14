@@ -5,9 +5,9 @@ Auto install 0L and set 0L.toml to run Tower(only)
 ```
 sudo apt-get install jq tcl expect moreutils -y
 ```
-Move these scripts to user root dir
+Give these scripts run permission and move to user root dir
 ```
-mv Auto0L/* ~
+chmod +x Auto0L/* && mv Auto0L/* ~
 ```
 
 ## Auto0L.sh
