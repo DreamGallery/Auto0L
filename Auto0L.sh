@@ -26,12 +26,14 @@ while [[ $(curl -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc
 do
     ./onboard.sh "${ONBOARDMNEMONIC}" "${AutheneticationKey}"
     PID=$!; wait ${PID}
+    sleep 10
 done
 
 while [[ $(curl -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"get_tower_state_view","params":["'${Address}'"],"id":1}' http://63.229.234.77:8080 | jq -r '.result') == "null" ]]
 do
     ./submitgenesis.sh "${MNEMONIC}"
     PID=$!; wait ${PID}
+    sleep 10
 done
 
 wget -q https://github.com/OLSF/libra/releases/download/v5.2.0/tower -O ~/bin/tower && chmod +x ~/bin/tower
