@@ -18,7 +18,7 @@ echo "AutheneticationKey: ${AutheneticationKey}"
 PID=$!; wait ${PID}
 
 
-sed -i 's/upstream_nodes = \[.*\]/upstream_nodes = \["http:\/\/52.15.236.78:8080", "http:\/\/73.181.115.53:8080", "http:\/\/fullnode.letsmove.fun"\]/g' ~/.0L/0L.toml
+sed -i 's/upstream_nodes = \[.*\]/upstream_nodes = \["http:\/\/63.229.234.76:8080"\]/g' ~/.0L/0L.toml
 sed -i "$(($(cat ~/.0L/0L.toml | grep -n "tx_configs.miner_txs_cost" | awk -F ":" '{print $1}')+1))c max_gas_unit_for_tx = 20000" ~/.0L/0L.toml
 
 
