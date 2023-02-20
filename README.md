@@ -3,11 +3,20 @@ Auto install 0L and set 0L.toml to run Tower(only).
 
 ## Requirement
 ```
-sudo apt-get install jq tcl expect moreutils -y
+sudo apt-get install jq tcl expect moreutils -y screen
+```
+Give users sudo permission under multi-user
+```
+sudo usermod -a -G sudo username
 ```
 Give these scripts run permission and move to user root dir.
 ```
-chmod +x Auto0L/* && mv Auto0L/* ~
+chmod +x Auto0L/* && mv Auto0L/* ~ && rm -rf Auto0L/ README.md
+```
+If show "libssl.so.1.1: cannot open shared object file: No such file or directory"
+```
+wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.17_amd64.deb
+sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.17_amd64.deb
 ```
 
 ## Auto0L.sh
