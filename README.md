@@ -15,7 +15,9 @@ chmod +x Auto0L/* && mv Auto0L/* ~
 ONBOARDMNEMONIC="Input your 0L mnemonic here"
 ```
 this is used to onboard your new accounts, add your mnemonic of the address which have gas cions.
+
 the new account info will be saved in `keygen.log` in the same directory.
+
 I recommended you write the mnemonic down and delete the file once everything is done.
 
 ## gettemplate.sh
@@ -37,13 +39,17 @@ txs create-account --authkey ${your authkey here} --coins 1
 
 ## submitgenesis.sh
 used to submit genesis proof(proof_0.json).
+
 The official tower tool doesn't seem to be able to upload it, so a Modify version is provided here.
+
 and will replace it to official version after submitting genesis proof successfully.
 
 ## AutoLocalTower.sh
 used to run tower with local mode and auto restart tower when it get stucked for some reasons.
+
 you need to add your mnemonic of new account to it after account initialization completed.
 
 ## 0Lsubmit.sh
 used to submit backlog proofs.
+
 you need to input your mnemonic in it.
