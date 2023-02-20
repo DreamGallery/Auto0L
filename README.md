@@ -42,3 +42,7 @@ and will replace it to official version after submitting genesis proof successfu
 ## AutoLocalTower.sh
 used to run tower with local mode and auto restart tower when it get stucked for some reasons
 you need to add your mnemonic of new account to it after account initialization completed
+
+## 0Lsubmit.sh
+used to submit backlog proofs
+you need to input your mnemonic in it 
