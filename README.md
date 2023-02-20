@@ -28,7 +28,8 @@ proof_0.json
 you can also edit the .toml file as you like.
 
 ## onboard.sh
-this is the script to onboard your new account with the mnemonic you add on Auto0L.sh.
+this is the script to onboard your new account with the mnemonic you add on Auto0L.sh
+
 the onboard command.
 ```
 txs create-account --authkey ${your authkey here} --coins 1
