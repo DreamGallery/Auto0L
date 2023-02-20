@@ -14,4 +14,6 @@ while { true } {
         "Backlog: Maximum number of proofs sent this epoch" { break; }
     }
     expect eof
+    wait
+    sleep 1
 }
