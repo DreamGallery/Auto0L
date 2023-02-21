@@ -10,8 +10,8 @@ while { true } {
         "Enter your 0L mnemonic:" { send "${MNEMONIC}\n" }
     }
     expect {
-        "WARN: Unable to submit backlog:" { continue; }
-        "Backlog: Maximum number of proofs sent this epoch" { break; }
+        "*Server error: Mempool submission error" { continue; }
+        "*cannot submit more proofs than allowed in epoch, aborting backlog" { break; }
     }
     expect eof
     wait
