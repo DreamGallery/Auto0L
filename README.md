@@ -16,7 +16,7 @@ chmod +x Auto0L/* && mv Auto0L/* ~ && rm -rf Auto0L/ README.md
 If show "libssl.so.1.1: cannot open shared object file: No such file or directory"
 ```
 wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1-1ubuntu2.1~18.04.23_amd64.deb
-sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.17_amd64.deb
+sudo dpkg -i libssl1.1_1.1.1-1ubuntu2.1~18.04.23_amd64.deb
 ```
 
 ## Auto0L.sh
